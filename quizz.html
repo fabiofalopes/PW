@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <title> Introdução </title>
+
+    <meta charset="utf-8">
+
+    <meta name="author" content="Fábio Lopes">
+    <meta name="description" content="Website sobre Lousã">
+    <meta name="keywords" content="Região Centro Portugal">
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Lousã</h1>
+        <img src="images/Lousã.jpg" alt="Vista do Castelo de Arouce situado na vila da Lousã">
+    </header>
+
+    <br>
+
+    <nav>
+        <p>
+            <a href="index.html">Introdução</a>
+            <a href="local.html"> <b>Localização</b> </a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="info.html">Informação</a>
+            <a href="quizz.html">Quizz</a>
+            <a href="html5-css.html">HTML5-CSS</a>
+        </p>
+    </nav>
+
+    <main>
+
+        <section>
+            <h3>Quizz</h3>
+            <p>Este quizz foi desenvolvido para testar os seus conhecimentos da Lousã</p>
+        </section>
+
+
+        <form method="POST" action="mailto: fabiofalopes@gmail.com" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>Mostre que conhece a Lousã</legend>
+
+                <fieldset>
+                    <legend>INFO</legend>
+                    <p><input type="text" name="nome" placeholder="Nome" autofocus></p>
+                    <p><input type="text" name="apelido" placeholder="Apelido"></p>
+                    <p><input type="submit" value="envie email"></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Perguntas</legend>
+
+                    <!-- Pergunta 1 - Resposta em texto -->
+                    <label for="pergunta1">1. Como era escrito antiogamente o nome da Vila</label>
+                    <input type="text" id="pergunta1" name="pergunta1" placeholder="Insira sua resposta aqui" autocomplete="Louzan" required maxlength="20" >
+                    <br>
+
+                    <!-- Pergunta 2 - Resposta em radio -->
+                    <label>2. Qual é o rio que passa pela Lousã?</label>
+                    <br>
+                    <label for="pergunta2A">
+                        <input type="radio" id="pergunta2A" name="pergunta2" value="Mondego" required>
+                        Mondego
+                    </label>
+                    <br>
+                    <label for="pergunta2B">
+                        <input type="radio" id="pergunta2B" name="pergunta2" value="Ceira">
+                        Ceira
+                    </label>
+                    <br>
+                    <label for="pergunta2C">
+                        <input type="radio" id="pergunta2C" name="pergunta2" value="Zêzere">
+                        Zêzere
+                    </label>
+                    <br>
+                    <label for="pergunta2D">
+                        <input type="radio" id="pergunta2D" name="pergunta2" value="Tejo">
+                        Tejo
+                    </label>
+                    <br>
+
+                    <!-- Pergunta 3 - Resposta em checkbox -->
+                    <label>3. Quais são as principais atividades econômicas da Vila da Lousã?</label><br>
+                    <input type="checkbox" id="pergunta3a" name="pergunta3" value="a">
+                    <label for="pergunta3a">A. Fabrico Automoveis</label><br>
+                    <input type="checkbox" id="pergunta3b" name="pergunta3" value="b">
+                    <label for="pergunta3b">B. Indústria Tecnológica</label><br>
+                    <input type="checkbox" id="pergunta3c" name="pergunta3" value="c">
+                    <label for="pergunta3c">C. Turismo</label><br>
+
+                    <!-- Pergunta 4 - Resposta em range -->
+                    <label for="altitude">4.Qual a altitude máxima da Serra da Lousã (em metros)?</label>
+                    <input type="range" min="0" max="2500" name="altitude" value="0"
+                        oninput="altitudeN.value = parseInt(altitude.value)">
+                    <output name="altitudeN" for="altitude">0</output> metros <br>
+
+                    <!-- Pergunta 5 - Resposta em cor -->
+                    <label for="pergunta5">5. Selecione 1 das cores predominantes na bandeira da Lousã</label>
+                    <input type="color" id="pergunta5" name="pergunta5"> <br>
+
+                    <!-- Pergunta 6 - Resposta em data -->
+                    <label for="pergunta6">6. Em que ano foi fundada a vila da Lousã?</label><br>
+                    <input type="date" id="pergunta6" name="pergunta6"> <br>
+
+                    <!-- Pergunta 7 - Resposta em imagem -->
+                    <label for="pergunta7">7. Qual das imagens esta representada na bandeira da Lousã?</label> <br>
+                    <select id="image" multiple>
+                        <input type="image" src="images/castle.png" alt="Submit" width="100">
+                        <input type="image" src="images/arp.png" alt="Submit" width="100">
+                        <input type="image" src="images/river.png" alt="Submit" width="100">
+                        <input type="image" src="images/rodizio.png" alt="Submit" width="100">
+
+                    </select>
+                    
+
+                    <br>
+
+                    <!-- Pergunta 8 - Resposta em number -->
+                    <label for="pergunta8">8. Quantos habitantes tem a vila da Lousã?</label>
+                    <input type="number" id="pergunta8" name="pergunta8" min="0" max="1000000" step="100" pattern="[0-9]{1,7}"> <br>
+
+                    <!-- Botão para enviar as respostas -->
+                    <input type="submit" value="Enviar">
+
+                </fieldset>
+
+            </fieldset>
+
+
+        </form>
+
+
+        <footer>
+            <p>
+                Fábio Lopes, 
+                22103261, 
+                ULHT,
+                2023
+            </p>
+          </footer> 
+    
+
+    </main>
+
+
+</body>
