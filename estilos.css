@@ -1,12 +1,27 @@
 * {
   font-family: 'Poppins', sans-serif;
+  
 }
 
 body {
   margin: 0;
 }
 
+a:link {
+  color: rgb(220, 234, 230);
+}
 
+a:visited {
+  color: rgb(132, 179, 142);
+}
+
+a:hover {
+  color: rgb(71, 48, 189);
+}
+
+a:active {
+  color: green;
+}
 
 header {
   position: relative;
@@ -45,7 +60,6 @@ header .img-frame img {
 }
 
 
-
 nav {
   display: flex;
   text-align: center;
@@ -82,6 +96,14 @@ figure {
   align-items: center;
 }
 
+section > p{
+  font-style: italic;
+  font-size: 19px;
+  margin: 10px;
+  padding: 2px;
+  color: black;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -89,9 +111,24 @@ main {
   padding: 20px;
 }
 
+table{
+  border-collapse: collapse;
+  width:75%; 
+  table-layout: fixed;
+}
+
 td,
 th {
+  border: 3px solid black;
   text-align: center;
+}
+
+section ~ p{
+  font-style: italic;
+  font-size: 19px;
+  margin: 10px;
+  padding: 2px;
+  color: rgb(128, 28, 28);
 }
 
 
@@ -145,6 +182,7 @@ input[type="color"] {
 fieldset {
   display: flex;
   flex-direction: column;
+  background-color: #d9ecd9;
 
 }
 
@@ -156,6 +194,11 @@ fieldset.info {
   padding: 5%;
   align-items: center;
 }
+
+fieldset > fieldset {
+  background-color: rgb(228, 228, 212);
+}
+
 
 #pergunta1,
 #pergunta2,
@@ -174,13 +217,10 @@ fieldset.info {
   text-align: center;
 }
 
-#image input[type="image"] {
-  margin: 0 5px;
-}
+
 
 select {
   display: flex;
   flex-direction: row;
   margin: auto;
 }
-
