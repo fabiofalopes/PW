@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="author" content="Fábio Lopes">
+    <meta name="description" content="Website sobre Lisboa">
+    <meta name="keywords" content="palavras chave">
+
+    <link rel="stylesheet" href="estilos.css">
+    
+    <!--  Fonte 1  Glock-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+
+    <!--  Fonte 2 Ubuntu  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!--  Fonte 3 Ubuntu ~~~~> font-family: 'Oswald', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Agencia de Viagens</h1>
+        <nav>
+            <div>
+                <p>Escolha um layout [</p>
+                <a href="../lab3_layout1/index.html" >1</a>
+                <a href="../lab3_layout2/index.html">2</a>
+                <a href="../lab3_layout3/index.html">3</a>
+                <p>]</p>
+            </div>
+            <a href="#seccaoCapitais">Selecione a sua viagem</a>
+            <a id="fundo f" href="#seccaoInformativa">Conheça os nossos destinos</a>
+            <button onclick="getRandomImage()">📷</button>
+        </nav>
+    </header>
+
+    <script src="script.js"></script>
+
+    <main>
+        <div class="elemento1">
+            <p class="text1">Viajar</p>
+        </div>
+    
+        <div class="fundo">
+            
+            <img id="myImage" src="https://source.unsplash.com/random/600×400/?city,world,travel,historic,buildings&_cache='" alt="">
+                        
+        </div>
+    
+
+        <div class="capitais">
+            <h2 id="seccaoCapitais"></h2>
+            <div>
+                <div>
+                    <img src="images/capitais/lisboa_result.png" alt="">
+                </div>
+                <div>
+                    <a href=""><p>Lisboa</p></a>
+                </div>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="images/capitais/londres_result.png" alt="">
+                </div>
+                <div>
+                    <a href=""><p>Londres</p></a>
+                </div>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="images/capitais/bruxelas_result.png" alt="">
+                </div>
+                <div>
+                    <a href=""><p>Bruxelas</p></a>
+                </div>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="images/capitais/budapeste_result.png" alt="">
+                </div>
+                <div>
+                    <a href=""><p>Budapeste</p></a>
+                </div>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="images/capitais/milao_result.png" alt="">
+                </div>
+                <div>
+                    <a href=""><p>Milão</p></a>
+                </div>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="images/capitais/paris_result.png" alt="">
+                </div>
+                <div>
+                    <a href=""><p>Paris</p></a>
+                </div>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="images/capitais/praga_result.png" alt="">
+                </div>
+                <div>
+                    <a href=""><p>Praga</p></a>
+                </div>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="images/capitais/reykiavik_result.png" alt="">
+                </div>
+                <div>
+                    <a href=""><p>Reykiavik</p></a>
+                </div>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="images/capitais/roma_result.png" alt="">
+                </div>
+                <div>
+                    <a href=""><p>Roma</p></a>
+                </div>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="images/capitais/varsovia_result.png" alt="">
+                </div>
+                <div>
+                    <a href=""><p>Varsóvia</p></a>
+                </div>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="images/capitais/viena_result.png" alt="">
+                </div>
+                <div>
+                    <a href=""><p>Viena</p></a>
+                </div>
+            </div>
+    
+            <!-- Capitais -->
+        </div>
+        
+    
+        <div class="container">
+            <h2 id="seccaoInformativa" ></h2>
+            <div class="circulo circulo1">
+                <p>&#9773;</p>
+                <a href="https://en.wikipedia.org/wiki/Moscow" target="_blank">
+                    <img class="image" src="/Lab3/lab3_layout2/images/moscow-cathedral-of-saint-basil.png" alt="">
+                </a>
+            </div>
+            <div class="circulo circulo2">
+                <p>&#9975;</p>
+                <a href="https://en.wikipedia.org/wiki/Reykjav%C3%ADk" target="_blank">
+                    <img class="image" src="/Lab3/lab3_layout2/images/reykjavik-church.png" alt="">
+                </a>
+            </div>
+            <div class="circulo circulo3">
+                <p>&#9728;</p>
+                <a href="https://en.wikipedia.org/wiki/Lisbon" target="_blank">
+                    <img class="image" src="/Lab3/lab3_layout2/images/belem-tower.png" alt="">
+                </a>
+            </div>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
